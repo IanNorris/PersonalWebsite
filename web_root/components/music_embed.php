@@ -1,0 +1,2 @@
+<a class="embedly-card" data-card-controls="0" href="https://www.last.fm/user/icStatic/library/artists?to=2017-08-14&from=2017-02-15">icStatic's top artists</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
