@@ -1,5 +1,5 @@
 <?php
-	$page_title = "Sea of Thieves";
+	$page_title = "Guitar Hero Live";
 	include '../../components/page_header.php'
 ?>
 	<section id="portfolio-post">
@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NpBIYngHaLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tJBCrTBT5g8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -17,32 +17,31 @@
 				
 				<div class="col-sm-7 inner-top-xs inner-right-xs">
 					<header>
-						<h2>Sea of Thieves</h2>
-						<p class="text-normal">Sea of Thieves is a pirate-themed action-adventure cooperative multiplayer game played from a first-person perspective. The game features cross-platform play between Windows-based personal computers and Xbox One video game consoles. A group of players travel and explore an open world via a pirate ship and assume different roles such as steering, hoisting sails, navigation, and firing cannons. Players embark on quests, collect loot and engage in combat with other players. Sea of Thieves is a shared game world, which means groups of players will encounter each other regularly throughout their adventures. The game has a cartoonish art style and an exaggerated physics engine that allow players to perform stunts, like being shot out of ship cannons.</p>
-						<p class="text-normal">Players can collect coins by completing missions called voyages, taking loot from other ships, or raiding a skeleton fort that contains large amounts of gold. The player aims to become a pirate legend. The gold can be used for purchasing everything from re-skinned weapons to new hulls and sails for the ship. These items are cosmetic and do not affect combat. The weapons are given to the player at the start of the game, and have five rounds of ammo before needing to find an ammo box to restock. The four usable weapons are a flintlock pistol, a blunderbuss, a sniper rifle, and a cutlass. Two weapons can be carried at once.</p>
+						<h2>Guitar Hero Live</h2>
+						<p class="text-normal">Guitar Hero Live is a music game developed by FreeStyleGames and published by Activision. It was released for multiple platforms in 2015. As with previous games in the series, players use a guitar controller to match fret patterns in time with the music.</p>
+						<p class="text-normal">In the game's primary single-player mode - GH Live - the player completes songs while experiencing full-motion video taken from the first-person perspective of a band's lead guitarist. The video includes shots of the audience and the band members. As the player performs the songs, the audience responds positively to good performances when few mistakes are made. If the player makes several mistakes in a row, the audience will become critical and start to jeer at the performer.</p>
 					</header>
 				</div><!-- /.col -->
 				
 				<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
 					<ul class="item-details">
-						<li><i class="monofa far fa-calendar-alt"></i> Release Date: March 2018</li>
-						<li><i class="monofa fas fa-gamepad"></i> Xbox One, Windows Store</li>
-						<li><i class="monofa fas fa-tags"></i> Pirates, Multiplayer, Adventure</li>
-						<li><i class="monofa fas fa-building"></i> <a href="https://www.rare.co.uk/games/sea-of-thieves" target="_blank">Rare Ltd</a> / <a href="https://www.xbox.com/" target="_blank">Microsoft Game Studios</a></li>
-						<li><i class="monofa fas fa-link"></i> <a href="https://www.seaofthieves.com" target="_blank">SeaOfThieves.com</a></li>
+						<li><i class="monofa far fa-calendar-alt"></i> Release Date: November 2015</li>
+						<li><i class="monofa fas fa-gamepad"></i> Xbox One, PS4, X360, PS3 3, WiiU, iOS</li>
+						<li><i class="monofa fas fa-tags"></i> Music, Rhythm, Guitar, Multiplayer</li>
+						<li><i class="monofa fas fa-building"></i> FreeStyleGames / <a href="https://www.activision.com/" target="_blank">Activision|Blizzard</a></li>
+						<li><i class="monofa fas fa-link"></i> <a href="https://www.guitarhero.com/uk/en/game/ghlive" target="_blank">GuitarHero.com</a></li>
 					</ul><!-- /.item-details -->
 					
 					<div class="outer-top-xs">
 						<h3 class="sidelines text-center"><span>Key personal contributions</span></h3>
 						
 						<ul class="arrowed">
-							<li>Team lead for the Windows Store version</li>
-							<li>PC specific features &amp; optimisations</li>
-							<li>Security, anti-cheat and encryption</li>
-							<li>Memory usage tooling &amp; tracking</li>
-							<li>Retail crash debugging tooling</li>
-							<li>Misc. UE4 features &amp; optimisations</li>
-							<li>Primary customer support engineer for PC</li>
+							<li>Cross-platform rendering framework</li>
+							<li>In-house engine features</li>
+							<li>Video transition system</li>
+							<li>TCR/TRC/XR compliance</li>
+							<li>Performance optimisations</li>
+							<li>Font renderer for karaoke mode written day before deadline without any bugs</li>
 						</ul>
 					</div>
 				</div><!-- /.col -->
@@ -91,7 +90,7 @@
 				
 				<div class="col-sm-6 inner-top-xs">
 					<figure>
-						<img src="06.jpg" alt="">
+						<img src="12.jpg" alt="">
 					</figure>
 				</div><!-- /.col -->
 				
@@ -139,7 +138,7 @@
 				
 				<div class="col-sm-6 inner-top-xs">
 					<figure>
-						<img src="12.jpg" alt="">
+						<img src="06.jpg" alt="">
 					</figure>
 				</div><!-- /.col -->
 				

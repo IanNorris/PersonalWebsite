@@ -25,7 +25,7 @@
 				
 				<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
 					<ul class="item-details">
-						<li class="date">Release Date: TBC</li>
+						<li><i class="far fa-calendar-alt"></i> Release Date: TBC</li>
 					</ul><!-- /.item-details -->
 				</div><!-- /.col -->
 				

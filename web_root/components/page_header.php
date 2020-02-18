@@ -12,6 +12,7 @@
 		<title>Ian Norris - <?=$page_title?></title>
 		
 		<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 		<link href="/assets/css/main.css" rel="stylesheet">
 		<link href="/assets/css/blue.css" rel="stylesheet" title="Color">
 		<link href="/assets/css/owl.carousel.css" rel="stylesheet">
@@ -21,7 +22,6 @@
 		<link href="/assets/css/custom.css" rel="stylesheet">
 		<link href="//fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
 		<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
-		<link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 		<!--<link rel="shortcut icon" href="/assets/images/favicon.ico">-->
 	</head>
 	
@@ -40,7 +40,7 @@
 				<div class="yamm">
 					<div class="navbar-collapse collapse">
 						<div class="container">
-							<a class="navbar-brand" href="index.html"><img src="/images/logo_name.png" class="logo" alt=""></a>
+							<a class="navbar-brand" href="/"><img src="/images/logo_name.png" class="logo" alt=""></a>
 							
 							<ul class="nav navbar-nav">							
 								<?php include 'menu.php' ?>
