@@ -24,7 +24,7 @@
 					
 					<div class="row">
 						<div class="col-sm-12">
-							<div id="owl-featured-works" class="owl-carousel owl-outer-nav owl-ui-lg">
+							<div id="owl-carousel" class="owl-carousel owl-outer-nav owl-ui-lg">
 								<div class="item">
 									<a href="/Games/Everwild/">
 										<figure>
@@ -34,7 +34,7 @@
 													<p>Rare, Xbox Game Studios</p>
 												</div>
 											</figcaption>
-											<img src="Games/Everwild/01.jpg" alt="Everwild">
+											<img src="Games/Everwild/01_banner.jpg" alt="Everwild">
 										</figure>
 									</a>
 								</div>
@@ -48,7 +48,7 @@
 													<p>Rare, Microsoft Game Studios</p>
 												</div>
 											</figcaption>
-											<img src="Games/SeaOfThieves/02.jpg" alt="Sea of Thieves">
+											<img src="Games/SeaOfThieves/02_banner.jpg" alt="Sea of Thieves">
 										</figure>
 									</a>
 								</div>
@@ -62,7 +62,7 @@
 													<p>FreeStyleGames, Activision</p>
 												</div>
 											</figcaption>
-											<img src="Games/GuitarHeroLive/01.jpg" alt="Guitar Hero Live">
+											<img src="Games/GuitarHeroLive/01_banner.jpg" alt="Guitar Hero Live">
 										</figure>
 									</a>
 								</div>
@@ -76,25 +76,10 @@
 													<p>FreeStyleGames, Activision</p>
 												</div>
 											</figcaption>
-											<img src="Games/DJHero2/01.jpg" alt="DJ Hero 2">
+											<img src="Games/DJHero2/01_banner.jpg" alt="DJ Hero 2">
 										</figure>
 									</a>
 								</div>
-								
-								<div class="item">
-									<a href="/Games/DJHero/">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info big">
-													<h2>DJ Hero (2009)</h2>
-													<p>FreeStyleGames, Activision</p>
-												</div>
-											</figcaption>
-											<img src="Games/DJHero/01.jpg" alt="DJ Hero">
-										</figure>
-									</a>
-								</div>
-								
 							</div>
 						</div>
 					</div>
