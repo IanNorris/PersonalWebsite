@@ -102,7 +102,7 @@
 							<h2>Current employment</h2>
 							<p>I am currently working as a Senior Software Engineer for <a href="https://www.rare.co.uk/" target="_blank">Rare Ltd</a>, a subsidiary of <a href="https://www.microsoft.com/" target="_blank">Xbox and Microsoft</a>. I work within the Engine team primarily on <a href="https://www.rare.co.uk/news/rare-revelations-at-x019" target="_blank">Everwild</a>.</p>
 							<p>I also support <a href="https://www.seaofthieves.com/" target="_blank">Sea of Thieves</a>, a pirate themed "Shared World Adventure Game" (SWAG) where you and your crew sail the seas, go questing and dig up treasure.</p>
-							<a href="/Portfolio/SeaOfThieves/" class="txt-btn" data-toggle="modal">Check out Sea of Thieves</a>
+							<a href="/Games/SeaOfThieves/" class="txt-btn" data-toggle="modal">Check out Sea of Thieves</a>
 						</div>
 						
 					</div>

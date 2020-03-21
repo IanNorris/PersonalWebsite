@@ -39,9 +39,10 @@
 							<li>Cross-platform rendering framework</li>
 							<li>In-house engine features</li>
 							<li>Video transition system</li>
-							<li>TCR/TRC/XR compliance</li>
-							<li>Performance optimisations</li>
+							<li>Particle system driven by art requirements</li>
+							<li>Performance optimisations on all platforms</li>
 							<li>Font renderer for karaoke mode written day before deadline without any bugs</li>
+							<li>TCR/TRC/XR compliance</li>
 						</ul>
 					</div>
 				</div><!-- /.col -->
