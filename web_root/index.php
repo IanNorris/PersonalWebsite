@@ -16,7 +16,7 @@
 					<div class="row inner-xs">
 						<div class="col-sm-10 center-block text-center">
 							<header>
-								<h1>Software Engineer</h1>
+								<h1>Senior Software Engineer</h1>
 								<p>I am a passionate and experienced software engineer with a focus on low level systems and core engine technologies. I've worked in the games industry for over 13 years.</p>
 							</header>
 						</div>
