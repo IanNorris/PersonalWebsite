@@ -62,7 +62,7 @@
 													<p>FreeStyleGames, Activision</p>
 												</div>
 											</figcaption>
-											<img src="Games/GuitarHeroLive/01_banner.jpg" alt="Guitar Hero Live">
+											<img src="Games/GuitarHeroLive/banner.jpg" alt="Guitar Hero Live">
 										</figure>
 									</a>
 								</div>

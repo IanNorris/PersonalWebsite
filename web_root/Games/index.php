@@ -44,7 +44,7 @@
 			<!-- right -->
 			<div class="row inner-top-xs">
 				<div class="col-sm-6 inner-right-xs text-right">
-					<figure><a href="GuitarHeroLive/"><img src="GuitarHeroLive/02.jpg" alt="Guitar Hero Live"></a></figure>
+					<figure><a href="GuitarHeroLive/"><img src="GuitarHeroLive/07.jpg" alt="Guitar Hero Live"></a></figure>
 				</div>
 				<div class="col-sm-6 inner-top-xs inner-left-xs">
 					<a href="GuitarHeroLive/"><h2>Guitar Hero Live</h2></a>

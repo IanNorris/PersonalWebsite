@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NpBIYngHaLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rD974R24J-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -25,8 +25,8 @@
 				
 				<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
 					<ul class="item-details">
-						<li><i class="monofa far fa-calendar-alt"></i> Release Date: March 2018</li>
-						<li><i class="monofa fas fa-gamepad"></i> Xbox One, Windows Store</li>
+						<li><i class="monofa far fa-calendar-alt"></i> Release Date: March 2018 (June 2020 Steam)</li>
+						<li><i class="monofa fas fa-gamepad"></i> Xbox One, Windows Store, Steam</li>
 						<li><i class="monofa fas fa-tags"></i> Pirates, Multiplayer, Adventure</li>
 						<li><i class="monofa fas fa-building"></i> <a href="https://www.rare.co.uk/games/sea-of-thieves" target="_blank">Rare Ltd</a> / <a href="https://www.xbox.com/" target="_blank">Microsoft Game Studios</a></li>
 						<li><i class="monofa fas fa-link"></i> <a href="https://www.seaofthieves.com" target="_blank">SeaOfThieves.com</a></li>
