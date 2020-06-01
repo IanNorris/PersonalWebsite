@@ -3,3 +3,13 @@
 	width: 1.5em;
 	text-align: center;
 }
+
+figure * + figcaption {
+    padding-top: 0.5em;
+	text-align: center;
+}
+
+.cover-photo {
+	height: 500px;
+	object-fit: cover;
+}
