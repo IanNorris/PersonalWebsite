@@ -19,7 +19,7 @@
 					<header>
 						<h2>Buzz! Junior Titles</h2>
 						<p class="text-normal"><b>Buzz! Junior: Monster Rumble</b> and <b>Buzz! Junior: Robo Jam</b>
- were both co-developed by FreeStyleGames and Magenta Software. It includes a collection of multiplayer mini-games controlled by the Buzz! quizz controllers.</p>
+ were both co-developed by FreeStyleGames and Magenta Software. It includes a collection of multiplayer mini-games controlled by the Buzz! quiz controllers.</p>
 						<p class="text-normal">Gameplay comprises multiple mini-games, each quite simple and straightforward to play using the four Buzz! controllers. It is primarily aimed at the family market.</p>
 					</header>
 				</div><!-- /.col -->
