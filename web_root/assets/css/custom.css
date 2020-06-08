@@ -13,3 +13,16 @@ figure * + figcaption {
 	height: 500px;
 	object-fit: cover;
 }
+
+.post-content > * {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+body.font-face {
+	font-family: 'source_sans_proregular';
+    src: url('/assets/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -20,9 +20,16 @@
 		<link href="/assets/css/animate.min.css" rel="stylesheet">
 		<link href="/assets/css/aos.css" rel="stylesheet">
 		<link href="/assets/css/custom.css" rel="stylesheet">
-		<link href="//fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
-		<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
-		<!--<link rel="shortcut icon" href="/assets/images/favicon.ico">-->
+		
+		<link rel="stylesheet" href="/assets/fonts/stylesheet.css" type="text/css" charset="utf-8" />
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	
 	<body>
