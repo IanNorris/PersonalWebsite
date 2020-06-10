@@ -26,3 +26,12 @@ body.font-face {
     font-weight: normal;
     font-style: normal;
 }
+
+img.banner-fit {
+	height: 400px;
+	object-fit: contain;
+}
+
+img.pad-top {
+	padding-top: 40px;
+}

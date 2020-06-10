@@ -22,7 +22,7 @@
 				<div class="post-content">
 					<div class="post-media">
 						<figure>
-							<img class="cover-photo" src="<?php echo $banner_image; ?>" alt="<?php echo $banner_alt; ?>" />
+							<img class="cover-photo <?php echo $banner_classes; ?>" src="<?php echo $banner_image; ?>" alt="<?php echo $banner_alt; ?>" />
 						</figure>
 					</div>
 					
