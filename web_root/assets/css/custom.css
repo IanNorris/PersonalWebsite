@@ -35,3 +35,11 @@ img.banner-fit {
 img.pad-top {
 	padding-top: 40px;
 }
+
+.post {
+	padding: 20px;
+}
+
+.classic-blog .post-content .meta {
+	padding-left: 60px;
+}

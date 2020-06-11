@@ -29,6 +29,5 @@
 					<h1 class="post-title"><?php echo $post_title; ?></h1>
 					
 					<ul class="meta">
-						<li>Ian Norris</li>
 						<li><?php echo $publish_date; ?></li>
 					</ul>

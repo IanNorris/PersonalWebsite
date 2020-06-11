@@ -4,6 +4,7 @@
 	$banner_alt = "Problem solving";
 	$publish_date = "2020/06/10";
 	$post_title = "The Grey Square Of Despair";
+	$synopsis = "Fresh into the role of a senior programmer and having 'Graphics' in my job title, this is the story of the grey square of despair and my journey to madness and back.";
 	$image_credits = [
 		"Problem solving" => ["Many Pixels", "https://www.manypixels.co/" ]
 	];
