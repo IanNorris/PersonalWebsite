@@ -51,6 +51,11 @@
 		<script src="/assets/js/viewport-units-buggyfill.js"></script>
 		<script src="/assets/js/scripts.js"></script>
 		
+		<?php if(isset($use_prism) && $use_prism)
+		{?>
+			<script src="/assets/prismjs/prism.js"></script>
+		<?php } ?>
+		
 		<?php 
 			if( isset( $modals ) )
 			{

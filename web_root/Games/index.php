@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-sm-10 aos-init aos-animate" data-aos="fade-up">
 					<header>
-						<h1>Published Games</h1>
+						<h1>Games</h1>
 					</header>
 				</div>
 			</div>

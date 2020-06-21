@@ -43,3 +43,16 @@ img.pad-top {
 .classic-blog .post-content .meta {
 	padding-left: 60px;
 }
+
+.fig-noresize img{
+	width: auto;
+	height: auto;
+}
+
+.fig-noresize {
+	text-align: center;
+}
+
+ul {
+    list-style: square;
+}
