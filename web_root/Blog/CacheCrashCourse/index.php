@@ -40,7 +40,7 @@ table.diff tbody td, table.diff tbody th {
 
 </style>
 
-<p>This piece will provide some tips on making more optimal use of your cache and help you avoid some common pitfalls that can tank your performance. By looking at examples of what isn’t cache friendly, we will learn what is.</p>
+<p>Poor cache utilization can cripple your performance and limit your ability to optimize elsewhere. This makes optimizing your cache one of the most impactful changes you can make. This piece will provide some tips on optimizing your cache and help you avoid some common pitfalls that can tank your performance. By looking at examples of what isn’t cache friendly, we will learn what is.</p>
 
 <p>This post is aimed at developers familiar with lower-level languages like C++ and assumes some exposure to concepts like dynamic memory allocation and pointers.</p>
 
@@ -59,7 +59,7 @@ table.diff tbody td, table.diff tbody th {
 
 <p>The “cache line” on a modern processor is typically 64 bytes. The cache line is the minimum granularity of a fetch from main memory into any cache. Only need 10 bytes? Tough! The processor is fetching 64. Want 65 bytes? The CPU is now fetching you 128! Those 64 byte blocks are “aligned”, so if your data structure falls across a boundary, you may pay the cost for several cache lines.</p>
 
-<p>Every time memory is fetched you pay a penalty called a cache miss. If you’re reading a large data structure, you might have several cache misses until all data is loaded. If the bytes you need are spread out, you’re paying a high cost for every byte read. Some cache misses are unavoidable, our goal is to eliminate the avoidable ones.</p>
+<p>When data is fetched from main memory you pay a penalty called a cache miss. If you’re loading a lot of data sequentially, the CPU may be able to predict what you’ll need next by loading it in advance. If you’re reading a large data structure but the data you need is spread out or accessed erratically, you might have several cache misses until all the data is loaded.   In this scenario you’re paying a high cost for every byte read. Some cache misses are unavoidable, our goal is to eliminate the avoidable ones.</p>
 
 <h2>Compiler optimizations</h2>
 
@@ -289,6 +289,58 @@ Immediate padding 30 bytes (62.5% of class size)</code></pre>
 	<img src="inline.jpg" alt="INLINE ALL THE THINGS">
 	<figcaption>INLINE ALL THE THINGS</figcaption>
 </figure>
+
+<p>We all know the virtues of inlining. If we inline all our functions, all our performance problems disappear, right?
+Of course not, and in fact aggressive inlining can often be counterproductive.</p>
+
+<p>Now that I’ve primed you to think about instruction caches, let’s think what happens when you inline. Imaginary function A calls function B 10 times, and B is 100 instructions. When you run A, it does some additional work to enter and exit function B 10 times, but your instruction cache now contains one copy of function A and one copy of function B.</p>
+
+<p>When you inline function B, that extra work to enter and exit function B is eliminated, but function A just grew by 10x function B. Your instruction cache now also contains the code for 10x B.</p>
+
+<p>In this scenario, we’d still likely see a performance benefit to inlining B, and in fact the compiler probably did that for you. However, if function B is actually 10,000 instructions and we inline it, things look very different! Now function A is a hulking monstrosity, and we’re getting multiple cache misses for each call of function A. If we don’t inline B, both functions fit in the cache and the entry and exit penalty for B becomes irrelevant by comparison to the size of function B itself.</p>
+
+<p>In most cases the compiler will probably just ignore you and not inline it if you do this. Enter stage left the <code>always_inline</code> (GCC) and <code>__forceinline</code> (MSVC) attributes! These were created as hints to the compiler that you would really like it to inline something, and that you know what you’re doing. Before cracking out the <code>FORCEINLINE</code> macro, are you sure you know what you’re doing?</p>
+
+<p>You may be thinking that nobody in their right mind would force inline a function this big, but it happens, often without realising. Take for example a singleton. You have a Get function that returns (and creates if necessary) an instance of a class on first call. Your Get function is called everywhere, so you force inline it. The code is simple enough:
+
+<pre><code class="language-cpp">FORCEINLINE MyObject& Get()
+{
+	static MyObject* Singleton = nullptr;
+	if(!Singleton)
+	{
+		Singleton = new MyObject();
+		Assert(Singleton);
+	}
+	return Singleton;
+};</code></pre>
+
+<p>Looks good, right? (threading issues aside) You disabled the ability for new to throw by disabling exceptions, so it only seems prudent to assert that it returns a valid value.</p>
+
+<p>What you don’t know is that Assert is a huge macro that expands out and calls multiple functions by writing logs, checking if a debugger is present, sending telemetry etc. On top of that, your log functions are macros so it is always inlined too. To add insult to injury, your memory manager overloads new, and guess what? That’s inlined too!</p>
+
+<p>Suddenly your Get function is a few thousand instructions, and that’s pasted throughout your codebase wherever you need the singleton, and because it’s just a getter you don’t cache the result either!</p>
+
+<p>Yes, inlining can be valuable - force inlining can be too - but use it sparingly and with care. In most cases trust your compiler to get it right, it really does know what it is doing.</p>
+
+<h2>Object-orientated pitfalls</h2>
+
+<p>The natural organization of data that results from object-oriented programming can make optimization for cache coherency more difficult. OOP is a useful pattern as it can improve readability, but it is important to know when to break with the pattern for performance reasons.</p>
+
+<p>An example of this is a Character class in a game. This code might have rendering, animation, physics, audio, health, and lots more attached to it.</p>
+
+<p>With all this data, your Character class is likely to be large, and if your game has many characters, calling your single Update function is probably going to be quite expensive. Naturally, updating all these systems for a Character is never going to be cheap, but by throwing bad cache utilisation into the mix you’re just compounding the problem.</p>
+
+<p> You can fix some of these problems by breaking down the larger class into smaller components with each component having just the data it needs. The Entity Component System (ECS) pattern describes a good way of doing this. Just be careful you don’t make your components too feature-rich (or generalized) and end up with the same problem...</p>
+
+<h2>Data-oriented design</h2>
+
+<p>If you’ve made it this far, you’ve just been primed on the core concepts of Data-oriented design!</p> 
+
+<p>Mike Acton has been a proponent of Data-oriented Design for years, and I highly encourage you to make your next click his talk on this topic.</p>
+
+<?php YouTube("rX0ItVEVjHc", "Mike Acton - Data-Oriented Design and C++"); ?>
+
+<!-- ------------------------------------------------------------------------------------ -->
 
 <div id="diffoutput"> </div>
 
