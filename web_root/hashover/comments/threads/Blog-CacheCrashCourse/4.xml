@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment>
+	<body>
+		Test
+	</body>
+	<date>2020-06-24T00:32:17+0000</date>
+	<name>Ian Norris</name>
+	<password>$2y$10$Sz8sPw9I26rRFLH3.plf$.nbpBYHVFZRDsxgGn7xTHmO9vr.U0tUK</password>
+	<login_id>c89c3e81314a1fd1d8d67f953c8ce6d393f21c61</login_id>
+	<email>nS4lQuEGfqDu5ZoZnRrQ7Ll2hDN/FTsYTofmG9eBOYJjxrsaEEmjXaA9c326xTno</email>
+	<encryption>23,29,0,0,1,2,1,1,29,0,22,20,1,2,5,36</encryption>
+	<email_hash>3079aabb04290b2d893b744db2914afc</email_hash>
+	<notifications>yes</notifications>
+</comment>

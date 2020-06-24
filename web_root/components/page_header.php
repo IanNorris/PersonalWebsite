@@ -20,6 +20,7 @@
 		<link href="/assets/css/animate.min.css" rel="stylesheet">
 		<link href="/assets/css/aos.css" rel="stylesheet">
 		<link href="/assets/css/custom.css" rel="stylesheet">
+		<link href="/hashover/themes/default/comments.css" rel="stylesheet">
 		
 		<link rel="stylesheet" href="/assets/fonts/stylesheet.css" type="text/css" charset="utf-8" />
 		
