@@ -60,3 +60,11 @@ ul {
 .hashover-home-link {
 	font-size: smaller;
 }
+
+input,
+textarea,
+.uneditable-input,
+.form-inline .form-control,
+.navbar-form .form-control {
+    width: auto;
+}

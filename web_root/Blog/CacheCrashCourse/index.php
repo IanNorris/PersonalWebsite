@@ -341,7 +341,7 @@ Of course not, and in fact aggressive inlining can often be counterproductive.</
 <?php YouTube("rX0ItVEVjHc", "Mike Acton - Data-Oriented Design and C++"); ?>
 
 <!-- ------------------------------------------------------------------------------------ -->
-
+<!--
 <div id="diffoutput"> </div>
 
 <script src="../../assets/jsdifflib/difflib.js"></script>
@@ -380,5 +380,7 @@ function blogRender() {
 document.addEventListener('DOMContentLoaded', blogRender, false);
 
 </script>
+
+-->
 
 <?php include '../../components/blog_post_footer.php' ?>
