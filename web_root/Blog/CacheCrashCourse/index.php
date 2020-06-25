@@ -358,33 +358,33 @@ Of course not, and in fact aggressive inlining can often be counterproductive.</
 	<li>Because we don’t necessarily need to write the result for every object, we’ll pick a subset of objects to write their result back based on their index. You can pretend this is based on the value written or some other Boolean.</li>
 </ul>
 
-<h3>Version 1</h3>
+<h4>Version 1</h4>
 
 <p>Our starting point. Imagine this codebase has evolved over time through several years and developers. All the bad practices seen here I’ve seen in real production code. In fact, this isn’t even that bad by comparison...</p>
 
-<h3>Version 2</h3>
+<h4>Version 2</h4>
 
 <p>We remove the separate Transform object here resulting in less indirection and put the data it contains next to the other used data. Now, something interesting happens here – the performance actually decreases! We’ll explore Version 2 in more detail later, it’s quite interesting! For now though, know that we’ll want this change later on regardless of its performance impact compared to Version 1.</p>
 
-<h3>Version 3</h3>
+<h4>Version 3</h4>
 
 <p>Now we swap a std::list for std::vector. That’s the only change. This has the largest performance impact of all the changes. Depending on hardware this is anywhere from 2.5x faster to 60x faster!</p>
 
-<h3>Version 4</h3>
+<h4>Version 4</h4>
 
 <p>Now we tidy up the mess of data and organize it to reduce padding. Depending on memory bandwidth this can have a decent performance impact as you’re reducing the amount of wasted space from padding in the cache lines fetched.</p>
 
-<h3>Version 5</h3>
+<h4>Version 5</h4>
 
 <p>Here we swap the 4 byte Boolean type for a one byte Boolean. The history of this <a href="https://stackoverflow.com/questions/54217528/are-there-any-modern-cpus-where-a-cached-byte-store-is-actually-slower-than-a-wo" target="_blank">is complex</a>, but I’ve worked with coding standards that mandated using a 32bit type as a Boolean as a result of the impact of this on some hardware. On modern CPUs using 4 byte Booleans will always be a net loss.</p>
 
 <p>Again, the gains here are minimal unless there are a large number of Booleans in use, in which case the savings can add up.</p>
 
-<h3>Version 6</h3>
+<h4>Version 6</h4>
 
 <p>Next, we move the data we don’t need for our “hot path” out into a separate structure but keep a pointer from our primary structure. I found that in some cases this was actually slower (despite our structure decreasing from 656 bytes to 88 bytes), but these remain edge cases. In most cases you will see a performance boost from making this change. This should become obvious if you hit this case though as you’ll have profiled the change, right?</p>
 
-<h3>Version 7</h3>
+<h4>Version 7</h4>
 
 <p>In version 7 we make additional changes by batching data used together into their individual arrays. The pointer to the “other” data is now separated out and isn’t referenced in the primary structure at all. Instead we rely on the object’s index to access the other data sets.</p>
 
