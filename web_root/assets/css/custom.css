@@ -68,3 +68,8 @@ textarea,
 .navbar-form .form-control {
     width: auto;
 }
+
+.classic-blog .post-title {
+    font-size: 30px;
+	line-height: 110%;
+}
