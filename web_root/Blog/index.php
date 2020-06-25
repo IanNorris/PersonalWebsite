@@ -44,6 +44,10 @@
 		<div class="row">
 		
 		<?php
+			BlogPost('CacheCrashCourse4');
+			BlogPost('CacheCrashCourse3');
+			BlogPost('CacheCrashCourse2');
+			BlogPost('CacheCrashCourse');
 			BlogPost('FireAndFrames');
 			BlogPost('GreySquare');
 		?>
