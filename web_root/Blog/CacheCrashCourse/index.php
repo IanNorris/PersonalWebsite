@@ -95,6 +95,12 @@ table.diff tbody td, table.diff tbody th {
 
 <p>There are some scenarios where flexibility matters more than performance however. By all means use a linked list, but when performance is your primary goal a vector will (almost) always be faster - even with frequent deletion and insertions.</p>
 
+<p>So why is performance so terrible for linked lists? They lack predictability! CPUs are great at predicting what your code will do next. If you’re traversing a vector it will predict after a few reads that the read pattern is likely to continue. As such you can bet the CPU has already loaded the next element into the cache before you reach the instructions that need it.</p>
+
+<p>The predictability that vectors provide isn’t possible with a traditional linked list because you need the pointer of the next item in the list before you can prefetch the next block of data at that location.</p>
+
+<p>A bonus of using a vector is cache line sharing. If you’ve got a small structure of 32 bytes, you can get two of them in a cache line. When using a linked list, each item is likely to be disparate in memory resulting in each structure occupying its own cache line with the rest being unused.</p>
+
 <p>If you don’t care about order, vectors can be made even faster. You can use a technique called “swap and pop” where you can remove an item from the middle of a list by replacing it with the last element in the vector and erasing the last to prevent “shuffling.”</p>
 
 <p>If you care about pointer (or index) stability, vectors are not great as they can reallocate when resized. A great data structure for this scenario is a <a href="http://www.cplusplus.com/reference/deque/deque/" target="_blank">deque</a>. Allocations are made in “pages” and when you need to expand the data structure you add a page. New items fill in gaps in existing pages, and when a page is empty it is deleted. These can often be a good trade-off between performance and flexibility.</p>
@@ -339,6 +345,65 @@ Of course not, and in fact aggressive inlining can often be counterproductive.</
 <p>Mike Acton has been a proponent of Data-oriented Design for years, and I highly encourage you to make your next click his talk on this topic.</p>
 
 <?php YouTube("rX0ItVEVjHc", "Mike Acton - Data-Oriented Design and C++"); ?>
+
+<h2>Benchmarking it</h2>
+
+<p>So, what happens if you apply all these rules? Or rather, what happens if we do the exact opposite? I wrote a small benchmark that was representative of all the mistakes above, then fixed them all in a series of changes. It’s a bit contrived but bear with me.</p>
+
+<p>These are the rules I stuck to:</p>
+
+<ul>
+	<li>No data can be lost. We assume that all the data present in the app is useful to the program, but we don’t care about how that data is accessed (or initialized) outside of our “hot path.”</li>
+	<li>This is not an optimization demo, so I can’t modify the core of the algorithm, just how the data it needs is accessed.</li>
+	<li>Because we don’t necessarily need to write the result for every object, we’ll pick a subset of objects to write their result back based on their index. You can pretend this is based on the value written or some other Boolean.</li>
+</ul>
+
+<h3>Version 1</h3>
+
+<p>Our starting point. Imagine this codebase has evolved over time through several years and developers. All the bad practices seen here I’ve seen in real production code. In fact, this isn’t even that bad by comparison...</p>
+
+<h3>Version 2</h3>
+
+<p>We remove the separate Transform object here resulting in less indirection and put the data it contains next to the other used data. Now, something interesting happens here – the performance actually decreases! We’ll explore Version 2 in more detail later, it’s quite interesting! For now though, know that we’ll want this change later on regardless of its performance impact compared to Version 1.</p>
+
+<h3>Version 3</h3>
+
+<p>Now we swap a std::list for std::vector. That’s the only change. This has the largest performance impact of all the changes. Depending on hardware this is anywhere from 2.5x faster to 60x faster!</p>
+
+<h3>Version 4</h3>
+
+<p>Now we tidy up the mess of data and organize it to reduce padding. Depending on memory bandwidth this can have a decent performance impact as you’re reducing the amount of wasted space from padding in the cache lines fetched.</p>
+
+<h3>Version 5</h3>
+
+<p>Here we swap the 4 byte Boolean type for a one byte Boolean. The history of this <a href="https://stackoverflow.com/questions/54217528/are-there-any-modern-cpus-where-a-cached-byte-store-is-actually-slower-than-a-wo" target="_blank">is complex</a>, but I’ve worked with coding standards that mandated using a 32bit type as a Boolean as a result of the impact of this on some hardware. On modern CPUs using 4 byte Booleans will always be a net loss.</p>
+
+<p>Again, the gains here are minimal unless there are a large number of Booleans in use, in which case the savings can add up.</p>
+
+<h3>Version 6</h3>
+
+<p>Next, we move the data we don’t need for our “hot path” out into a separate structure but keep a pointer from our primary structure. I found that in some cases this was actually slower (despite our structure decreasing from 656 bytes to 88 bytes), but these remain edge cases. In most cases you will see a performance boost from making this change. This should become obvious if you hit this case though as you’ll have profiled the change, right?</p>
+
+<h3>Version 7</h3>
+
+<p>In version 7 we make additional changes by batching data used together into their individual arrays. The pointer to the “other” data is now separated out and isn’t referenced in the primary structure at all. Instead we rely on the object’s index to access the other data sets.</p>
+
+<p>The result data is also written directly to its own array. We likely get additional benefits here by never reading the result value, only writing it directly to its target location.</p>
+
+<h2>Benchmark results</h2>
+
+<figure class="fig-noresize">
+	<img src="msvc_versions.png" alt="Benchmark results for MSVC">
+	<figcaption>Benchmark results for MSVC</figcaption>
+</figure>
+
+<p>There are two versions on display here. The first is “partial write back”. In this case we only write back 1% of our results back. This is to simulate a scenario where an object is updating but only sometimes needs to update the stored result. The other scenario is “full write back”, here we always write the result regardless of whether the value changed.</p>
+
+<p>The partial writeback scenario is an interesting one because although I attempted to simulate randomness of objects being updated, the compiler has clearly seen some additional room for optimization in Version 7. Of course, this is only part of the story, see the section about different compilers later!</p>
+
+<p>You can explore the benchmark results further by using the diff tool to compare two versions of the code and results.</p>
+
+<p style="color:red">TODO: Diff here</p>
 
 <!-- ------------------------------------------------------------------------------------ -->
 <!--
