@@ -86,6 +86,8 @@ table.diff tbody td, table.diff tbody th {
 
 <h2>Results</h2>
 
+<p>A quick side note before we examine the results, if you are profiling using Visual Studio, it is really important that even with release builds that you don't run with the debugger attached. Although the severity of the performance hit when a debugger is attached varies between Visual Studio versions (even in release) additional debugging options are enabled that make reproducing bugs more likely (such as the debug allocator and iterator debugging), but these can negatively impact performance. As such when running performance sensitive code (such as this benchmark), run it from outside Visual Studio.</p>
+
 <figure class="fig-noresize">
 	<img src="msvc_versions.png" alt="Benchmark results for MSVC">
 	<figcaption>Benchmark results for MSVC</figcaption>
