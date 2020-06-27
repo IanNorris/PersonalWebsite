@@ -1,0 +1,32 @@
+{
+	"type": "bar",
+	"data": {
+		"labels": ["Version 1", "Version 2", "Version 3", "Version 4", "Version 5", "Version 6", "Version 7"],
+		"datasets": [
+			{
+				"label": "Time (ms)",
+				"data": [ 38.9393, 42.1, 18.14, 18.1, 17.29, 4.82, 4.459 ]
+			}
+		]
+	},
+	"options": {
+		"legend": {
+			"display": false
+		},
+		"scales": {
+			"yAxes": [
+				{
+					"scaleLabel": {
+						"display": true,
+						"labelString": "Time (ms)"
+					}
+				}
+			]
+		},
+		"plugins": {
+			"colorschemes": {
+				"scheme": "brewer.Paired12"
+			}
+		}
+	}
+}
