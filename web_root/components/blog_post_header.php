@@ -12,6 +12,14 @@
 		<?php
 	}
 	
+	function Chart($src, $caption) { ?>
+		<figure>
+			<canvas chart="<?php echo $src; ?>"></canvas>
+			<figcaption><?php echo $caption; ?></figcaption>
+		</figure>
+	<?php
+	}
+	
 	include 'page_header.php'
 ?>
 

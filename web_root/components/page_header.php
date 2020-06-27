@@ -35,6 +35,14 @@
 		<?php if(isset($use_prism) && $use_prism)
 		{?>
 			<link href="/assets/prismjs/prism.css" rel="stylesheet" />
+		<?php }
+		if(isset($use_jsdiff) && $use_jsdiff)
+		{?>
+			<link href="/assets/jsdifflib/diffview.css" rel="stylesheet" />
+		<?php }
+		if(isset($use_chartjs) && $use_chartjs)
+		{?>
+			<link href="/assets/chartjs/Chart.min.css" rel="stylesheet" />
 		<?php } ?>
 	</head>
 	

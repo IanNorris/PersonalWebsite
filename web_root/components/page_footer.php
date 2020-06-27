@@ -51,12 +51,45 @@
 		<script src="/assets/js/viewport-units-buggyfill.js"></script>
 		<script src="/assets/js/scripts.js"></script>
 		
+		
+		
 		<?php if(isset($use_prism) && $use_prism)
 		{?>
 			<script src="/assets/prismjs/prism.js"></script>
-		<?php } ?>
-		
-		<?php 
+		<?php }
+		if(isset($use_jsdiff) && $use_jsdiff)
+		{?>
+			<script src="/assets/jsdifflib/difflib.js"></script>
+			<script src="/assets/jsdifflib/diffview.js"></script>
+		<?php }
+		if(isset($use_prism) && $use_prism)
+		{?>
+			<script src="/assets/chartjs/Chart.bundle.min.js"></script>
+			<script src="/assets/chartjs-colorschemes/chartjs-plugin-colorschemes.min.js"></script>
+			
+			<script type="text/javascript">
+				function chartsRender() {
+					var charts = document.querySelectorAll("canvas[chart]");
+					
+					var chartElements = [];
+					var chartResources = [];
+					for(var chart = 0; chart < charts.length; chart++ ) {
+						chartElements.push(charts[chart]);
+						chartResources.push(charts[chart].attributes["chart"].value);
+					}
+					var chartPromises = chartResources.map( url => fetch(url).then( response => response.json() ) );
+
+					Promise.all(chartPromises).then( results => {
+						for(var result = 0; result < results.length; result++ ) {
+							var canvasContext = chartElements[result].getContext("2d");
+							var chart = new Chart( canvasContext, results[result] );
+						}
+					} );
+				};
+
+				document.addEventListener('DOMContentLoaded', chartsRender, false);
+			</script>
+		<?php }
 			if( isset( $modals ) )
 			{
 				foreach( $modals as $modal_name => $modal_details )
