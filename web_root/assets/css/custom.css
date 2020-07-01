@@ -89,5 +89,25 @@ textarea,
 	margin-bottom: 3px;
 }
 
+#diffoutput table {
+	width: 1078px;
+}
+
+#diffoutput table thead tr th:nth-child(n + 1) {
+	width: 3%;
+}
+
+#diffoutput table thead tr th:nth-child(n + 2) {
+	width: 47%;
+}
+
+#diffoutput table thead tr th:nth-child(n + 3) {
+	width: 3%;
+}
+
+#diffoutput table thead tr th:nth-child(n + 4) {
+	width: 47%;
+}
+
 /* --------------------------- */
 
