@@ -90,6 +90,7 @@ textarea,
 }
 
 #diffoutput table {
+	line-height: 100%;
 	width: 1078px;
 }
 
