@@ -66,7 +66,7 @@ table.diff tbody td, table.diff tbody th {
 
 <figure>
 	<img src="pipeline.svg" alt="A four stage instruction pipeline.">
-	<figcaption>A four stage instruction pipeline. Illustration by <a href="https://en.wikipedia.org/wiki/Instruction_pipelining#/media/File:Pipeline,_4_stage_with_bubble.svg" target="_blank">Cburnett</a></figcaption>
+	<figcaption>A four stage instruction pipeline. Illustration by <a href="https://en.wikipedia.org/wiki/Instruction_pipelining#/media/File:Pipeline,_4_stage_with_bubble.svg" rel="noopener" target="_blank">Cburnett</a></figcaption>
 </figure>
 
 <h3>What happens if all the instructions rely on the previous one?</h3>
@@ -103,7 +103,7 @@ table.diff tbody td, table.diff tbody th {
 
 <p>For Sea of Thieves we spent a lot of time “aggregating ticks”. Bunching objects of the same type together so we can update them together within our game frame.</p>
 
-<p>My colleague <a href="https://twitter.com/JonMikeHolmes" target="_blank">Jon Holmes</a> did a fantastic presentation on this at Unreal Fest so I won’t dive too deep, but this slide neatly summarizes the gains from just a 100 object aggregation:</p>
+<p>My colleague <a href="https://twitter.com/JonMikeHolmes" rel="noopener" target="_blank">Jon Holmes</a> did a fantastic presentation on this at Unreal Fest so I won’t dive too deep, but this slide neatly summarizes the gains from just a 100 object aggregation:</p>
 
 <figure>
 	<img src="aggregation.jpg" alt="A 30% improvement by aggregating 100 objects together.">

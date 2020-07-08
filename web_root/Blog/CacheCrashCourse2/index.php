@@ -62,7 +62,7 @@ table.diff tbody td, table.diff tbody th {
 
 <p>If you don’t care about order, vectors can be made even faster. You can use a technique called “swap and pop” where you can remove an item from the middle of a list by replacing it with the last element in the vector and erasing the last to prevent “shuffling.”</p>
 
-<p>If you care about pointer (or index) stability, vectors are not great as they can reallocate when resized. A great data structure for this scenario is a <a href="http://www.cplusplus.com/reference/deque/deque/" target="_blank">deque</a>. Allocations are made in “pages” and when you need to expand the data structure you add a page. New items fill in gaps in existing pages, and when a page is empty it is deleted. These can often be a good trade-off between performance and flexibility.</p>
+<p>If you care about pointer (or index) stability, vectors are not great as they can reallocate when resized. A great data structure for this scenario is a <a href="http://www.cplusplus.com/reference/deque/deque/" rel="noopener" target="_blank">deque</a>. Allocations are made in “pages” and when you need to expand the data structure you add a page. New items fill in gaps in existing pages, and when a page is empty it is deleted. These can often be a good trade-off between performance and flexibility.</p>
 
 <h2>Types</h2>
 
@@ -121,17 +121,17 @@ table.diff tbody td, table.diff tbody th {
 
 <p>If you’ve written (or intend to write) your own allocator, you may be wondering how do you ensure your structure starts aligned?</p>
 
-<p>Luckily, there’s a solution to that so you don’t need to pass that mental load to your user: <a href="http://www.cplusplus.com/reference/type_traits/alignment_of/" target="_blank"><code>alignment_of</code></a>. This is used like so: <code>alignment_of&lt;AlignmentTest2&gt;::value</code>, which returns 16 for <code>AlignmentTest2</code>.</p>
+<p>Luckily, there’s a solution to that so you don’t need to pass that mental load to your user: <a href="http://www.cplusplus.com/reference/type_traits/alignment_of/" rel="noopener" target="_blank"><code>alignment_of</code></a>. This is used like so: <code>alignment_of&lt;AlignmentTest2&gt;::value</code>, which returns 16 for <code>AlignmentTest2</code>.</p>
 
 <p>With all this in mind, you can tell a lot about an engineer’s background and primary concerns by how they organize data in their structures and classes.</p>
 
 <p>I’ve seen very senior engineers take very little concern about the order of members; mixing booleans, floats and pointers haphazardly. I’ve also seen obvious attempts to organize by sub-feature or functions that use it. Better, but we can go further.</p>
 
-<p>When size matters you should order with attention to the <a href="https://en.wikipedia.org/wiki/Data_structure_alignment" target="_blank">natural alignment</a> of the member to avoid padding by the compiler. This can help get your total structure size down.</p>
+<p>When size matters you should order with attention to the <a href="https://en.wikipedia.org/wiki/Data_structure_alignment" rel="noopener" target="_blank">natural alignment</a> of the member to avoid padding by the compiler. This can help get your total structure size down.</p>
 
 <p>You should use common sense when ordering members however, these are guides not rules, so if you know a set of data will be used together, make sure it will be close by in memory. Eliminating padding is not your primary goal, eliminating excessive waste is.</p>
 
-<p>Because applying these rules is complicated there are often options built into the compiler that will tell you the padding of a structure. My favourite tool to use right now for this is <a href="https://llvm.org/docs/CommandGuide/llvm-pdbutil.html#pretty-subcommand" target="_blank">llvm-pdbutil</a>. This will tell you what’s inside a PDB file from an MSVC compiler (such as included with Visual Studio).</p>
+<p>Because applying these rules is complicated there are often options built into the compiler that will tell you the padding of a structure. My favourite tool to use right now for this is <a href="https://llvm.org/docs/CommandGuide/llvm-pdbutil.html#pretty-subcommand" rel="noopener" target="_blank">llvm-pdbutil</a>. This will tell you what’s inside a PDB file from an MSVC compiler (such as included with Visual Studio).</p>
 
 <p>You can use this command to write out all the structures and their memory layout from your application:</p>
 

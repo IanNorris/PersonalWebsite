@@ -58,7 +58,7 @@ table.diff tbody td, table.diff tbody th {
 
 <h2>The code</h2>
 
-<p>I've uploaded the code for this <a href="https://github.com/IanNorris/CodeFromBlogPosts/tree/master/Cache" target="_blank">benchmark to Github</a> if you wish to run it on your own machine or do further experiments than what I've outlined here.</p>
+<p>I've uploaded the code for this <a href="https://github.com/IanNorris/CodeFromBlogPosts/tree/master/Cache" rel="noopener" target="_blank">benchmark to Github</a> if you wish to run it on your own machine or do further experiments than what I've outlined here.</p>
 
 <p>The different Version header files in this folder represent the modifiable part of the benchmark, with the rest remaining the same across runs. The interface is a little unusual, but it was structured this way to allow all aspects of the data access to be manipulated across the versions. What follows is a brief summary of the changes made in each version, each iterating from the previous version.</p>
 
@@ -82,7 +82,7 @@ table.diff tbody td, table.diff tbody th {
 
 <h4>Version 5</h4>
 
-<p>Here we swap the 4 byte Boolean type for a one byte Boolean. The history of why this might have made it into coding standards <a href="https://stackoverflow.com/questions/54217528/are-there-any-modern-cpus-where-a-cached-byte-store-is-actually-slower-than-a-wo" target="_blank">is complex</a>, but I’ve worked with coding standards that mandated using a 32bit type as a Boolean.</p>
+<p>Here we swap the 4 byte Boolean type for a one byte Boolean. The history of why this might have made it into coding standards <a href="https://stackoverflow.com/questions/54217528/are-there-any-modern-cpus-where-a-cached-byte-store-is-actually-slower-than-a-wo" rel="noopener" target="_blank">is complex</a>, but I’ve worked with coding standards that mandated using a 32bit type as a Boolean.</p>
 
 <p>Again, the gains here are minimal unless there are a large number of Booleans in use, in which case the small savings can add up.</p>
 

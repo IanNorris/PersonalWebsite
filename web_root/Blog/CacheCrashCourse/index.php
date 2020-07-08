@@ -73,7 +73,7 @@ table.diff tbody td, table.diff tbody th {
 
 <h2>Big N, Big :O</h2>
 
-<p>The saying goes that you shouldn’t prematurely optimize, however the larger your N, the more care you need to take with the design of a system. Some design consideration now can play dividends later when system designs are harder to optimize for performance.</p>
+<p>The saying goes that you shouldn’t prematurely optimize, however the larger your N, the more care you need to take with the design of a system. Some design consideration now can pay dividends later when system designs are harder to optimize for performance.</p>
 
 <p>Here are a few rules to make your life easier:</p>
 
