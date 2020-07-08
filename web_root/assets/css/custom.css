@@ -123,11 +123,15 @@ textarea,
 	}
 
 	#blog-post .classic-blog .post {
-		margin-top: 10px;
+		margin-top: 5px;
 	}
 
 	.classic-blog .post-content > *, .grid-blog.col-2 .post-content > *, .grid-blog.col-3 .post-content > *, .grid-blog.col-2.no-sidebar .post-content > *, .grid-blog.col-3.no-sidebar .post-content > * {
 		margin-left: 5px;
 		margin-right: 5px;
+	}
+	
+	.navbar-header {
+		padding: 5px;
 	}
 }
