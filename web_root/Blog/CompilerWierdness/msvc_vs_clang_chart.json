@@ -1,0 +1,39 @@
+{
+	"type": "bar",
+	"data": {
+		"labels": ["Version 1", "Version 3", "Version 7"],
+		"datasets": [
+			{
+				"label": "MSVC Partial Writeback, Default Inlining",
+				"data": [ 38.1907, 17.81, 4.136 ]
+			},
+			{
+				"label": "Clang Partial Writeback, Default Inlining",
+				"data": [ 46.1624, 1.705, 1.592 ]
+			},
+			{
+				"label": "MSVC Partial Writeback, No Inlining",
+				"data": [ 56.0196, 1.986, 1.876 ]
+			},
+			{
+				"label": "Clang Partial Writeback, No Inlining",
+				"data": [ 46.1682, 1.72, 1.591 ]
+			},
+			{
+				"label": "MSVC Partial Writeback, Force Inlined",
+				"data": [ 37.8808, 17.83, 4.492 ]
+			},
+			{
+				"label": "Clang Partial Writeback, Force Inlined",
+				"data": [ 46.1663, 1.704, 1.603 ]
+			}
+		]
+	},
+	"options": {
+		"plugins": {
+			"colorschemes": {
+				"scheme": "brewer.Paired12"
+			}
+		}
+	}
+}

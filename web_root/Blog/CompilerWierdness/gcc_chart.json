@@ -1,0 +1,39 @@
+{
+	"type": "bar",
+	"data": {
+		"labels": ["Version 1", "Version 2", "Version 3", "Version 4", "Version 5", "Version 6", "Version 7"],
+		"datasets": [
+			{
+				"label": "Partial Writeback, Default Inlining",
+				"data": [ 46.0272, 44.58, 1.793, 1.84, 1.708, 1.647, 1.668 ]
+			},
+			{
+				"label": "Full Writeback, Default Inlining",
+				"data": [ 38.0756, 42.93, 18.97, 18.78, 18.37, 5.989, 4.27 ]
+			},
+			{
+				"label": "Partial Writeback, No Inlining",
+				"data": [ 46.4749, 44.86, 1.813, 1.791, 1.705, 1.616, 1.703 ]
+			},
+			{
+				"label": "Full Writeback, No Inlining",
+				"data": [ 37.8642, 43.14, 19.08, 18.79, 17.75, 5.579, 4.179 ]
+			},
+			{
+				"label": "Partial Writeback, Force Inlined",
+				"data": [ 45.9671, 49.02, 1.827, 1.794, 1.696, 1.688, 1.646 ]
+			},
+			{
+				"label": "Full Writeback, Force Inlined",
+				"data": [ 37.5671, 37.76, 19.12, 18.77, 18.16, 5.43, 4.041 ]
+			}
+		]
+	},
+	"options": {
+		"plugins": {
+			"colorschemes": {
+				"scheme": "brewer.Paired12"
+			}
+		}
+	}
+}
