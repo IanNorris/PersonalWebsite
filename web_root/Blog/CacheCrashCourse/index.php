@@ -3,8 +3,8 @@
 	$banner_classes = "banner-fit";
 	$banner_alt = "An illustration of a CPU";
 	$publish_date = "2020/07/07";
-	$post_title = "Cache Crash Course - Introduction";
-	$synopsis = "A deep dive into the CPU cache and how to optimize for it. Part 1 covers the basics such as cache sizes, cache lines and what the compiler can and cannot do.";
+	$post_title = "Cache Crash Course";
+	$synopsis = "A deep dive into the CPU cache and how to optimize for it.";
 	$image_credits = [
 		"CPU illustration" => ["Many Pixels", "https://www.manypixels.co/" ]
 	];
