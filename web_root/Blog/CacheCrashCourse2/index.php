@@ -2,7 +2,7 @@
 	$banner_image = "../CacheCrashCourse/cpu_monochromatic.svg";
 	$banner_classes = "banner-fit";
 	$banner_alt = "An illustration of a CPU";
-	$publish_date = "2020/06/25";
+	$publish_date = "2020/07/07";
 	$post_title = "Cache Crash Course - Data (Part 2)";
 	$synopsis = "Part two of the deep dive into the CPU cache and how to optimize for it. Part two covers optimizing your data and access patterns for better efficiency.";
 	$image_credits = [

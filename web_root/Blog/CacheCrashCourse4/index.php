@@ -2,7 +2,7 @@
 	$banner_image = "../CacheCrashCourse/cpu_monochromatic.svg";
 	$banner_classes = "banner-fit";
 	$banner_alt = "An illustration of a CPU";
-	$publish_date = "2020/06/27";
+	$publish_date = "2020/07/07";
 	$post_title = "Cache Crash Course - Benchmarking (Part 4)";
 	$synopsis = "Part four of our deep dive into the CPU cache and how to optimize for it. Part four puts the concepts together and provides a semi-realistic scenario of cache zero to cache hero.";
 	$image_credits = [
@@ -68,7 +68,9 @@ table.diff tbody td, table.diff tbody th {
 
 <h4>Version 2</h4>
 
-<p>We remove the separate Transform object here resulting in less indirection and put the data it contains next to the other used data. Now, something interesting happens here – the performance actually decreases! We’ll explore Version 2 in more detail later, it’s quite interesting! For now though, know that we’ll want this change later on regardless of its performance impact compared to Version 1.</p>
+<p>We remove the separate Transform object here resulting in less indirection and put the data it contains next to the other used data. Now, something interesting happens here – the performance actually decreases!</p>
+
+<p>This version is ~8% slower than Version 1, yet we removed an indirection. After removing the indirection, the struct size increased by 2%. This caught me off guard because this seemed to be a disproportionate impact, but if we remove 16 bytes from somewhere else in the struct the performance penalty is removed. There’s no immediate performance benefit of this change like I was expecting, but at least we didn’t make a regression. You may see a performance benefit from flattening your data however.</p>
 
 <h4>Version 3</h4>
 
@@ -108,7 +110,7 @@ table.diff tbody td, table.diff tbody th {
 
 <p></p><br />
 
-<p><b>If you enjoyed this, how about <a href="/Blog/CacheCrashCourse5/">part five - the compiler did <i>what</i>?!</a></p>
+<p><b>Are you ready to jump to <a href="/Blog/CacheCrashCourse5/">conclusions (part five)</a>?</p>
 
 <a href="/Blog/CacheCrashCourse5/" class="btn">Part five</a>
 

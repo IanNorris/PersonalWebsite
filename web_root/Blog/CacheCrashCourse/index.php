@@ -2,7 +2,7 @@
 	$banner_image = "cpu_monochromatic.svg";
 	$banner_classes = "banner-fit";
 	$banner_alt = "An illustration of a CPU";
-	$publish_date = "2020/06/25";
+	$publish_date = "2020/07/07";
 	$post_title = "Cache Crash Course - Introduction";
 	$synopsis = "A deep dive into the CPU cache and how to optimize for it. Part 1 covers the basics such as cache sizes, cache lines and what the compiler can and cannot do.";
 	$image_credits = [
