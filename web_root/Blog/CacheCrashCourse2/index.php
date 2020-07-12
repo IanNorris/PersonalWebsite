@@ -141,7 +141,7 @@ table.diff tbody td, table.diff tbody th {
 
 <pre><code>struct AlignmentTest2 [sizeof = 48] {
   data +0x00 [sizeof=1] char Byte
-  <padding> (15 bytes)
+  &lt;padding&gt; (15 bytes)
   data +0x10 [sizeof=16] __m128 Vector
 	data +0x10 [sizeof=16] float m128_f32[4]
 	data +0x10 [sizeof=16] unsigned __int64 m128_u64[2]
@@ -153,7 +153,7 @@ table.diff tbody td, table.diff tbody th {
 	data +0x10 [sizeof=16] unsigned short m128_u16[8]
 	data +0x10 [sizeof=16] unsigned int m128_u32[4]
   data +0x20 [sizeof=1] char Byte2
-  <padding> (15 bytes)
+  &lt;padding&gt; (15 bytes)
 }
 Total padding 30 bytes (62.5% of class size)
 Immediate padding 30 bytes (62.5% of class size)</code></pre>

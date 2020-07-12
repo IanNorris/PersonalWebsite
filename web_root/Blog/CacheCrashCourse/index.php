@@ -50,7 +50,7 @@ table.diff tbody td, table.diff tbody th {
 									
 <h2>Cache sizes &amp; cache lines</h2>
 
-<p>Memory gets increasingly more expensive the faster you need to access it. The amount of cache you have is tied to your specific CPU and has no relation to the amount of RAM you have. Even if you have 16GB of RAM you CPU likely have less than 16MB of cache on your CPU, and unless you have server or workstation grade CPUs, less than 1mb of L1 cache shared across all cores.</p>
+<p>Memory gets increasingly more expensive the faster you need to access it. The amount of cache you have is tied to your specific CPU and has no relation to the amount of RAM you have. Even if you have 16GB of RAM, your CPU likely has less than 16MB of cache; and unless you have server or workstation grade CPU, less than 1mb of L1 cache split across all cores.</p>
 
 <p>CPU-Z says the following about my CPU:</p>
 
