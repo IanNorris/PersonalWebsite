@@ -94,7 +94,7 @@
 						
 						<div class="col-sm-6 inner-right-xs text-right aos-init aos-animate" data-aos="fade-up">
 							<div class="video-container">
-								<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VYTGWchAlKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iRlt0SVo3UA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 						</div>
 						
