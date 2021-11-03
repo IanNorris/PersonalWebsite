@@ -44,6 +44,8 @@
 		<div class="row">
 		
 		<?php
+			BlogPost('SaaD');
+			BlogPost('Ghidra');
 			BlogPost('CacheCrashCourse');
 			BlogPost('FireAndFrames');
 			BlogPost('GreySquare');
