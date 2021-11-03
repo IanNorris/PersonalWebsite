@@ -37,7 +37,7 @@
 <h2>The cycle of mediocrity</h2>
 
 <figure class="fig-noresize">
-	<img src="cycle.png" alt="Company growth leads to more engineers. More engineers produce more features and more bugs. Teams need to continually justify their existence so push for further growth.">
+	<img src="cycle_chart.png" alt="Company growth leads to more engineers. More engineers produce more features and more bugs. Teams need to continually justify their existence so push for further growth.">
 	<figcaption>Companies can't shrink, they just produce larger and larger codebases, and with that comes complexity.</figcaption>
 </figure>
 
