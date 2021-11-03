@@ -58,14 +58,14 @@
 
 <h2>Breaking the loop</h2>
 
-<p>There’s no malice or ill will for any parties involved here. Every step in the chain is logical. Every feature and change justifiable. It’s only when you look at the bigger picture and the wider trends, that you see the damage we as developers have been doing to ourselves, to our customers, and to the environment.</p>
+<p>There’s no malice or ill will from any parties involved here. Every step in the chain is logical. Every feature and change justifiable. It’s only when you look at the bigger picture and the wider trends, that you see the damage we as developers have been doing to ourselves, to our customers, and to the environment.</p>
 
 <p>The normal answer to this kind of problem is that “the free market will decide”. In theory customers are free to switch to better products at any time, but this ignores a few factors:</p>
 
 <ul>
 <li>That there is a competitor to switch to. They may not have the desired content (with content locked behind long exclusivity deals). They may not have a specific feature that’s essential for that customer. It may just be too much effort to switch, or their data is locked inside the app.</li>
 <li>Software churn causes hardware churn and this is bad for the environment. People throw devices away that would normally be perfectly functional if not for the fact that apps are running slower than before.</li>
-<li>Software changes leave behind laggards and those that struggle with change. I’m thinking about your grandparents, your aunt who doesn’t get these “computer” things, and those that just don’t like change. User interface churn causes confusion, breaks workflows that worked perfectly fine before, and increase support calls to companies and family members.</li>
+<li>Software changes leave behind laggards and those that struggle with change. I’m thinking about your grandparents, your aunt who doesn’t get these “computer” things, and those that just don’t like change. User interface churn causes confusion, breaks workflows, and increase support calls to companies and family members.</li>
 <li>The amount of CPU time spent running inefficient software is costing us real money and damaging the planet in the process – all for a worse experience.</li>
 <li>All the apps are undergoing the same churn, so few products can stay ahead of this curve for long.</li>
 </ul>
@@ -75,16 +75,16 @@
 <p>So, how do we fix this? I don’t think there’s a simple solution here that’ll work everywhere, nor do I think some apps or companies can even be “saved”.</p>
 
 <ul>
-<li>Stop treating company growth as a strength. Small teams can happily maintain small apps, especially in the age of the cloud. As a society we need to enter a new age of sustainability, not clinging to failed economic models that require infinite growth to work.</li>
+<li>Stop treating company growth as a strength. Small teams can happily maintain small apps, especially in the age of the cloud. As a society we need to enter a new age of sustainability, not clinging to economic models that require infinite growth to work.</li>
 <li>Branching out into new spaces is great, but where possible make it a new app. Keep your apps small and focused on something specific. If the app doesn’t catch on, you’ve no longer got vestigial code acting like a tumour in your single large app when the product is shut down.</li>
-<li>“Modern” app development is honestly, a <i>fucking mess</i>. I avoid anything that touches or goes near systems like npm. There are a great many jokes about the sizes of the node_modules folder, and for good reason. With it came build problems, dependency problems, security problems and workflow problems. Entire ecosystems of tools to solve the problems caused by other packages, or just the quantity of them. This is not a healthy ecosystem, and we have an entire generation of developers that believe this is what software development is. It <i>isn’t</i>.</li>
-<li>When a company stagnates, vote with your feet – both as an engineer and as a customer. Push back against features that don’t add customer value. Establish if a feature is wanted before implementing it.</li>
-<li>Apply the YAGNI principle. You aren’t gonna need it.</li>
+<li>“Modern” app development is honestly, a <i>fucking mess</i>. I avoid anything that touches or goes near systems like npm. There are a great many jokes about the sizes of the node_modules folder, and for good reason. With it came build problems, dependency problems, security problems and workflow problems. There are entire ecosystems of tools to solve the problems caused by package size, quantity and dependency chains. This is not a healthy ecosystem or model, and we have an entire generation of developers that believe this is what software development is. It <i>isn’t</i>.</li>
+<li>When a company stagnates, vote with your feet – both as an engineer and as a customer. Push back against features that don’t add customer value. Establish if a feature is <i>wanted or needed</i> before implementing it.</li>
+<li>Apply the YAGNI principle. You aren’t gonna need it. Don't build systems just in case.</li>
 </ul>
 
 <p></p>
 
-<p>I don’t have all the answers here, but I believe as an industry we’re getting a bad name for ourselves and alienating our customers. How this will end I don’t know, but I know as an early adopter this is annoying me, and I can tolerate a lot more than the average consumer can. I call this trend “<i>software as a disservice</i>”. And this makes me SaaD.</p>
+<p>I don’t have all - or any - answers here, but I believe as an industry we’re getting a bad name for ourselves and alienating our customers. How this will end I don’t know, but I do know that as an early adopter this is annoying me, and I can tolerate a lot more than the average consumer can. I call this trend “<i>software as a disservice</i>”. And it makes me SaaD.</p>
 
 <h2>Further reading</h2>
 
@@ -96,6 +96,6 @@
 <li><a href="https://betterprogramming.pub/yagni-you-aint-gonna-need-it-f9a178cd8e1">YAGNI: You Ain’t Gonna Need It</a></li>
 </ul>
 
-<small><i>Embarc and Embarco are fictional names for the purposes of illustration and similarities or overlaps with real entities are coincidental.</i></small>
+<small><i>Embarc and Embarco are fictional names for the purposes of illustration. Similarities or overlaps with real entities are coincidental. Naming stuff is hard.</i></small>
 
 <?php include '../../components/blog_post_footer.php' ?>
