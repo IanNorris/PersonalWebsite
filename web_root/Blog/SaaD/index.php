@@ -91,9 +91,9 @@
 <p>If you liked this, you might like to check out:
 
 <ul>
-<li><a href="https://blog.pragmaticengineer.com/uber-app-rewrite-yolo/">Uber's Crazy YOLO App Rewrite, From the Front Seat - The Pragmatic Engineer</a></li>
-<li><a href="https://www.infoworld.com/article/3639050/complexity-is-killing-software-developers.html">Complexity is killing software developers</a></li>
-<li><a href="https://betterprogramming.pub/yagni-you-aint-gonna-need-it-f9a178cd8e1">YAGNI: You Ain’t Gonna Need It</a></li>
+<li><a href="https://blog.pragmaticengineer.com/uber-app-rewrite-yolo/" target="_blank">Uber's Crazy YOLO App Rewrite, From the Front Seat - The Pragmatic Engineer</a></li>
+<li><a href="https://www.infoworld.com/article/3639050/complexity-is-killing-software-developers.html" target="_blank">Complexity is killing software developers</a></li>
+<li><a href="https://betterprogramming.pub/yagni-you-aint-gonna-need-it-f9a178cd8e1" target="_blank">YAGNI: You Ain’t Gonna Need It</a></li>
 </ul>
 
 <small><i>Embarc and Embarco are fictional names for the purposes of illustration. Similarities or overlaps with real entities are coincidental. Naming stuff is hard.</i></small>
