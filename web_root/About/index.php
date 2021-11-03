@@ -23,7 +23,7 @@
 						
 						<div class="col-sm-4 inner-right-xs inner-bottom-xs aos-init aos-animate" data-aos="fade-up">
 							<h2>Engineering</h2>
-							<p>I have been a software engineer within the games industry for over 13 years. During this time I have worked on numerous published and unannounced titles in a variety of engineering roles.</p>
+							<p>I have been a software engineer within the games industry for over 15 years. During this time I have worked on numerous published and unannounced titles in a variety of engineering roles.</p>
 							<p>Contributions have included rendering, engine development, gameplay, tools, prototyping, platform porting and web services. I primarily develop with C++ and C# with recent game development being on title specific changes for Unreal Engine 4.</p>
 						</div>
 						
