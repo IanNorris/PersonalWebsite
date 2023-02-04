@@ -16,9 +16,9 @@
 					<div class="col-md-4 col-sm-6 inner">
 						<h4>Elsewhere on the Internet</h4>
 						<ul class="contacts">
-							<li><a href="https://twitter.com/icStatic" rel="noopener" target="_blank"><i class="fab fa-twitter"></i> @icStatic</a></li>
-							<li><a href="https://www.linkedin.com/in/iannorrisuk/" rel="noopener" target="_blank"><i class="fab fa-linkedin"></i> Ian Norris</a></li>
-							<li><a href="https://www.github.com/IanNorris/" rel="noopener" target="_blank"><i class="fab fa-github"></i> IanNorris</a></li>
+							<li><a rel="me" href="https://www.linkedin.com/in/iannorrisuk/" rel="noopener" target="_blank"><i class="fab fa-linkedin"></i> Ian Norris</a></li>
+							<li><a rel="me" href="https://www.github.com/IanNorris/" rel="noopener" target="_blank"><i class="fab fa-github"></i> IanNorris</a></li>
+							<li><a rel="me" href="https://mas.to/@icStatic"" rel="noopener" target="_blank"><i class="fab fa-mastodon"></i> icStatic</a></li>
 						</ul>
 					</div>
 					
