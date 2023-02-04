@@ -20,7 +20,7 @@
 }
 </style>
 
-<p><i>Reading level: No programming knowledge required, but having tried ChatGPT is advised.</i></p>
+<p><i>Reading level: No programming knowledge required, but trying ChatGPT first is advised.</i></p>
 
 <p><a href="#TLDR">Want a TL;DR?</a></p>
 
@@ -256,7 +256,7 @@ Human: Can I expect a refund?
 
 <p>GPT is neither intelligent nor sentient. It is extremely impressive though, and like it or not it, the next evolution of this technology will change the world as we know it in ways we haven’t even thought of yet – a disruption as large as the Personal Computer is only a few years away.</p>
 
-
-<small>This blog post was written by a human, with the assistance of ChatGPT for grammar checking, and of course entertainment.</small>
+<br/>
+<p><small>This blog post was written by a human, with the assistance of ChatGPT for grammar checking, and of course entertainment.</small></p>
 
 <?php include '../../components/blog_post_footer.php' ?>
