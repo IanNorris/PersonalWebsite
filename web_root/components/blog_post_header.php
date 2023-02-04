@@ -35,6 +35,7 @@
 					</div>
 					
 					<h1 class="post-title"><?php echo $post_title; ?></h1>
+					<h4 class="post-subtitle"><?php echo $synopsis; ?></h4>
 					
 					<ul class="meta">
 						<li><?php echo $publish_date; ?></li>

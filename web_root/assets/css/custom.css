@@ -19,6 +19,11 @@ figure * + figcaption {
 	margin-right: 40px;
 }
 
+.post-subtitle {
+	font-style: italic;
+	margin-top: -1rem;
+}
+
 body.font-face {
 	font-family: 'source_sans_proregular';
     src: url('/assets/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
