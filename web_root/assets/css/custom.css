@@ -140,3 +140,8 @@ textarea,
 		padding: 5px;
 	}
 }
+
+.prewrap {
+	white-space: pre-wrap;
+	word-break: normal;
+}

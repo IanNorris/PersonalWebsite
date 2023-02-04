@@ -44,6 +44,7 @@
 		<div class="row">
 		
 		<?php
+			BlogPost('GPT');
 			BlogPost('SaaD');
 			BlogPost('Ghidra');
 			BlogPost('CacheCrashCourse');
