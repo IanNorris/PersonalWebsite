@@ -17,7 +17,7 @@
 						<div class="col-sm-10 center-block text-center">
 							<header>
 								<h1>Senior Software Engineer</h1>
-								<p>I am a passionate and experienced software engineer with a focus on low level systems and core engine technologies. I've worked in the games industry for over 15 years.</p>
+								<p>I am a passionate and experienced software engineer with a focus on low level systems and core engine technologies. I've worked in the games industry for over 16 years.</p>
 							</header>
 						</div>
 					</div>
@@ -94,14 +94,13 @@
 						
 						<div class="col-sm-6 inner-right-xs text-right aos-init aos-animate" data-aos="fade-up">
 							<div class="video-container">
-								<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iRlt0SVo3UA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/i8KVJGJQBPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 						</div>
 						
 						<div class="col-sm-6 inner-top-xs inner-left-xs aos-init aos-animate" data-aos="fade-up">
 							<h2>Current employment</h2>
-							<p>I am currently working as a Senior Software Engineer for <a href="https://www.rare.co.uk/" target="_blank">Rare Ltd</a>, a subsidiary of <a href="https://www.microsoft.com/" target="_blank">Xbox and Microsoft</a>. I work within the Engine team primarily on <a href="https://www.rare.co.uk/news/rare-revelations-at-x019" target="_blank">Everwild</a>.</p>
-							<p>I also support <a href="https://www.seaofthieves.com/" target="_blank">Sea of Thieves</a>, a pirate themed "Shared World Adventure Game" (SWAG) where you and your crew sail the seas, go questing and dig up treasure.</p>
+							<p>I am currently working as a Senior Software Engineer for <a href="https://www.rare.co.uk/" target="_blank">Rare Ltd</a>, a subsidiary of <a href="https://www.microsoft.com/" target="_blank">Xbox and Microsoft</a>. I work within the Engine team supporting <a href="https://www.seaofthieves.com/" target="_blank">Sea of Thieves</a> and <a href="https://www.rare.co.uk/news/rare-revelations-at-x019" target="_blank">Everwild</a>.</p>
 							<a href="/Games/SeaOfThieves/" class="txt-btn" data-toggle="modal">Check out Sea of Thieves</a>
 						</div>
 						
