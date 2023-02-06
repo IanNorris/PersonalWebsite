@@ -72,7 +72,7 @@ main {
 	background-color: #F8FFFF;
 }
 main:before {
-	content: "";
+	/*content: "";*/
 	position: fixed;
 	top: 0;
 	left: 0;
