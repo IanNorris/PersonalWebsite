@@ -17,18 +17,6 @@
 	<section id="product">
 		<div class="container inner-xs">
 			
-			<!-- right -->
-			<div class="row">
-				<div class="col-sm-6 inner-right-xs text-right">
-					<figure><a href="Everwild/"><img src="Everwild/05.jpg" alt="Everwild"></a></figure>
-				</div>					
-				<div class="col-sm-6 inner-top-xs inner-left-xs">
-					<a href="Everwild/"><h2>Everwild</h2></a>
-					<p>Shown for the first time at the celebratory X019 event in London, Everwild is a brand new IP in the works at Rare, where unique and unforgettable experiences await in a natural and magical world.</p>
-					<a href="Everwild/" class="txt-btn">Find out more</a>
-				</div>
-			</div>
-			
 			<!-- left -->
 			<div class="row inner-top-xs">
 				<div class="col-sm-6 col-sm-push-6 inner-left-xs">

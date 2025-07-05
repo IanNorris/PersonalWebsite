@@ -17,28 +17,14 @@
 						<div class="col-sm-10 center-block text-center">
 							<header>
 								<h1>Senior Software Engineer</h1>
-								<p>I am a passionate and experienced software engineer with a focus on low level systems and core engine technologies. I've worked in the games industry for over 16 years.</p>
+								<p>I am a passionate and experienced software engineer with a focus on low level systems and core engine technologies. I've worked in the games industry for over 18 years.</p>
 							</header>
 						</div>
 					</div>
 					
 					<div class="row">
 						<div class="col-sm-12">
-							<div id="owl-carousel" class="owl-carousel owl-outer-nav owl-ui-lg">
-								<div class="item">
-									<a href="/Games/Everwild/">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info big">
-													<h2>Everwild (TBC)</h2>
-													<p>Rare, Xbox Game Studios</p>
-												</div>
-											</figcaption>
-											<img src="Games/Everwild/01_banner.jpg" alt="Everwild">
-										</figure>
-									</a>
-								</div>
-								
+							<div id="owl-carousel" class="owl-carousel owl-outer-nav owl-ui-lg">							
 								<div class="item">
 									<a href="/Games/SeaOfThieves/">
 										<figure>
@@ -100,7 +86,7 @@
 						
 						<div class="col-sm-6 inner-top-xs inner-left-xs aos-init aos-animate" data-aos="fade-up">
 							<h2>Current employment</h2>
-							<p>I am currently working as a Senior Software Engineer for <a href="https://www.rare.co.uk/" target="_blank">Rare Ltd</a>, a subsidiary of <a href="https://www.microsoft.com/" target="_blank">Xbox and Microsoft</a>. I work within the Engine team supporting <a href="https://www.seaofthieves.com/" target="_blank">Sea of Thieves</a> and <a href="https://www.rare.co.uk/news/rare-revelations-at-x019" target="_blank">Everwild</a>.</p>
+							<p>I am currently working as a Senior Software Engineer for <a href="https://www.rare.co.uk/" target="_blank">Rare Ltd</a>, a subsidiary of <a href="https://www.microsoft.com/" target="_blank">Xbox and Microsoft</a>. I work within the Engine team supporting <a href="https://www.seaofthieves.com/" target="_blank">Sea of Thieves</a>.</p>
 							<a href="/Games/SeaOfThieves/" class="txt-btn" data-toggle="modal">Check out Sea of Thieves</a>
 						</div>
 						

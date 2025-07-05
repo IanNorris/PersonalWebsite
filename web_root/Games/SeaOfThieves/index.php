@@ -26,7 +26,7 @@
 				<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
 					<ul class="item-details">
 						<li><i class="monofa far fa-calendar-alt"></i> Release Date: March 2018 (June 2020 Steam)</li>
-						<li><i class="monofa fas fa-gamepad"></i> Xbox One, Windows Store, Steam</li>
+						<li><i class="monofa fas fa-gamepad"></i> Xbox One, Windows Store, Steam &amp; PS5</li>
 						<li><i class="monofa fas fa-tags"></i> Pirates, Multiplayer, Adventure</li>
 						<li><i class="monofa fas fa-building"></i> <a href="https://www.rare.co.uk/games/sea-of-thieves" target="_blank">Rare Ltd</a> / <a href="https://www.xbox.com/" target="_blank">Microsoft Game Studios</a></li>
 						<li><i class="monofa fas fa-link"></i> <a href="https://www.seaofthieves.com" target="_blank">SeaOfThieves.com</a></li>
@@ -38,7 +38,7 @@
 						<ul class="arrowed">
 							<li>Team lead for the Windows Store version</li>
 							<li>PC specific features &amp; optimisations</li>
-							<li>Security, anti-cheat and encryption</li>
+							<li>Safety engineering</li>
 							<li>Memory usage tooling &amp; tracking</li>
 							<li>Retail crash debugging tooling</li>
 							<li>Misc. UE4 features &amp; optimisations</li>

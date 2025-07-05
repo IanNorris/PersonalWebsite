@@ -17,6 +17,18 @@
 	<section id="product">
 		<div class="container inner-xs">
 			
+			<!-- left -->
+			<div class="row inner-top-xs">
+				<div class="col-sm-6 col-sm-push-6 inner-left-xs">
+					<figure><a href="https://github.com/IanNorris/Enkel" target="_blank"><img src="Enkel/doom.gif" alt="Enkel operating system"></a></figure>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
+					<a href="https://github.com/IanNorris/Enkel" target="_blank"><h2>Enkel operating system</h2></a>
+					<p>An experimental operating system to learn low level concepts. Can run a subset of Linux applications natively.</p>
+					<a href="https://github.com/IanNorris/Enkel" target="_blank" class="txt-btn">Find out more</a>
+				</div>
+			</div>
+			
 			<!-- right -->
 			<div class="row">
 				<div class="col-sm-6 inner-right-xs text-right">
